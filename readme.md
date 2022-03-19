@@ -1,5 +1,5 @@
 ----install venv
-pip install virtualenv
+pip  virtualinstallenv
 
 ----activate virtualenv
 virtualenv venv
