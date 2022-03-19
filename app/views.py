@@ -1,11 +1,12 @@
-#
+# create addressbook app using django rest framework
 
-from .models import Mybook
-from .serializers import MybookSerializers
-from rest_framework.views import APIView
+from .models import Mybook #model
+from .serializers import MybookSerializers # serializers
+from rest_framework.views import APIView # APIView Class
 from rest_framework.response import Response
 from rest_framework import status
 
+# Create, Update Delete, and Retrive API using APIView
 class AddressBook(APIView):
     # method for retrive records using py id
     def get(self, request, pk=None,format=None):
